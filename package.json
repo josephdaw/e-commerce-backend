@@ -1,7 +1,7 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "e-commerce-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Express.js API that uses Sequelize to interact with a MySQL database to create the back end for an e-commerce site.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
+    "url": "git@github.com:josephdaw/e-commerce-backend.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["node","express","sequelize","mysql"],
+  "author": "Joseph Daw",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.3"
