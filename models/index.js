@@ -20,7 +20,8 @@ Product.belongsToMany(Tag, {
   // Define the third table needed to store the foreign keys
   through: {
     model: ProductTag,
-    unique: false
+    unique: true,
+    foreignKey: 'product_id'
   },
   // Define an alias for when data is retrieved
   // as: 'tags'
@@ -31,7 +32,8 @@ Tag.belongsToMany(Product, {
   // Define the third table needed to store the foreign keys
   through: {
     model: ProductTag,
-    unique: false
+    unique: true,
+    foreignKey: 'tag_id',
   },
   // Define an alias for when data is retrieved
   // as: 'tagged_products'
