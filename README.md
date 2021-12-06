@@ -15,6 +15,8 @@
 ## Description
 An Express.js API that uses Sequelize to interact with a MySQL database to create the back end for an e-commerce site.
 
+For a video of how to set-up the application and a demonstration of the API end points, [please click here](https://drive.google.com/file/d/1383xKkq3TUZL2EdbRcUf18nCu72lBn8S/view?usp=sharing).
+
 ### User Story
 
 ```md
@@ -47,13 +49,14 @@ After cloning the repository, run the command `npm i` to install the project dep
 You will need to create a `.env` file in order to store your MySQL user credentials. There is an example file, simply fill in your information and then remove the `.EXAMPLE` from the filename. *Note: the database name is already filled out for you.*
 
 ### Create the Schema
-The schema file is stored in the `db` folder. To create your database, run the command `mysql -u USERNAME -p` (e.g. `mysql -u root -p` ). You will then be prompted for your password. Next, ensure you are in the root of the directory and run the command `source db/schema.sql`. This will create your database schema.
+The schema file is stored in the `db` folder. To create your database, run the command `mysql -u USERNAME -p` (e.g. `mysql -u root -p` ). You will then be prompted for your password. Next, ensure you are in the root of the directory and run the command `source db/schema.sql`. This will create your database schema. Type `quit` to exit the sql command line.
 
 ### Seed the Database
 After creating the schema, run `npm run seed` to seed data to your database.
 
 
 ## Usage
+Start the server by running the command `npm start`:
 - You can get or create Products at `/api/products`
 - You can get, update, or delete a specific Product using ID at `/api/products/:id`
 - You can get or create Categories at `/api/categories`
